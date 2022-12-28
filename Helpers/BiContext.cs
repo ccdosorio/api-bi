@@ -9,8 +9,10 @@ public partial class BiContext : DbContext
 
     public DbSet<Book> Books { get; set; }
 
-    public BiContext(DbContextOptions<BiContext> options) : base(options) 
-    { 
+    public DbSet<User> Users { get; set; }
+
+    public BiContext(DbContextOptions<BiContext> options) : base(options)
+    {
         AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
     }
 
@@ -32,6 +34,16 @@ public partial class BiContext : DbContext
             book.Property(p => p.name).IsRequired();
             book.Property(p => p.category);
             book.Property(p => p.createdAt);
+        });
+
+        modelBuilder.Entity<User>(user =>
+        {
+            user.ToTable("users");
+            user.HasKey(p => p.id);
+            user.Property(p => p.name).IsRequired();
+            user.Property(p => p.email).IsRequired();
+            user.Property(p => p.password).IsRequired();
+            user.Property(p => p.createdAt);
         });
     }
 

@@ -1,9 +1,11 @@
 using api_bi.Models;
 using api_bi.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace api_bi.Controllers;
 
+[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class LibrariesController : ControllerBase
