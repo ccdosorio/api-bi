@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace api_bi.Controllers;
 
+[ApiController]
 [Route("api/[controller]")]
 public class BooksController : ControllerBase
 {
