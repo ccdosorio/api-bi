@@ -15,6 +15,6 @@ public class Library
     public string? location { get; set; }
 
     [JsonIgnore]
-    public virtual ICollection<Book> Books { get; set; }
+    public virtual ICollection<Book>? Books { get; set; }
 
 }

@@ -19,7 +19,7 @@ public class LibrariesService : ILibrariesService
         return _context.Libraries;
     }
 
-    public Library GetById(int libraryId)
+    public Library? GetById(int libraryId)
     {
         return _context.Libraries.Find(libraryId);
     }
@@ -90,7 +90,7 @@ public class LibrariesService : ILibrariesService
 public interface ILibrariesService
 {
     IEnumerable<Library> Get();
-    Library GetById(int libraryId);
+    Library? GetById(int libraryId);
     IEnumerable<Book> GetBooks(int libraryId);
     Task Save(Library library);
     Task<bool> SaveBookToLibrary(int libraryId, Book book);

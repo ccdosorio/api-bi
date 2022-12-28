@@ -20,6 +20,6 @@ public class Book
     [Column("created_at")]
     public DateTime createdAt { get; set; }
 
-    public virtual Library Library { get; set; }
+    public virtual Library? Library { get; set; }
 
 }
