@@ -1849,11 +1849,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/christianosorio/Desktop/api-bi/api-bi.csproj",
+      "projectUniqueName": "/Users/christianosorio/Desktop/Bi/api-bi/api-bi.csproj",
       "projectName": "api-bi",
-      "projectPath": "/Users/christianosorio/Desktop/api-bi/api-bi.csproj",
+      "projectPath": "/Users/christianosorio/Desktop/Bi/api-bi/api-bi.csproj",
       "packagesPath": "/Users/christianosorio/.nuget/packages/",
-      "outputPath": "/Users/christianosorio/Desktop/api-bi/obj/",
+      "outputPath": "/Users/christianosorio/Desktop/Bi/api-bi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/christianosorio/.nuget/NuGet/NuGet.Config"
